@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+
+    <style>
+    canvas{
+      background-color:yellow;
+    }
+    </style>
+  </head>
+  <body>
+    <canvas id="cnvs" width="300" height="150">
+
+    </canvas>
+
+
+    <script>
+    let cnvs = document.getElementById("cnvs");
+    let context = cnvs.getContext("2d");
+
+    context.moveTo(0,0);
+    context.lineTo(500,500);
+    context.stroke();
+    </script>
+  </body>
+</html>
